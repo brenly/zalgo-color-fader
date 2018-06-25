@@ -1,4 +1,5 @@
-﻿
+﻿import java.util.Random;
+
 //zalgo html color fader by Brenly
 //design concepts and code partials borrowed from:
 //https://www.stuffbydavid.com/textcolorizer/source
@@ -11,8 +12,9 @@ var zalgo_top ["&#x030;", "&#x300;", "&#x301;", "&#x302;", "&#x303;", "&#x304;",
 var zalgo_middle ["&#x315;", "&#x321;", "&#x322;", "&#x327;", "&#x328;", "&#x31B;", "&#x334;", "&#x335;", "&#x336;", "&#x337;", "&#x338;", "&#x35C;", "&#x35D;", "&#x35E;", "&#x35F;", "&#x340;", "&#x341;", "&#x358;", "&#x360;", "&#x361;", "&#x488;", "&#x489;"];
 var zalgo_bottom ["&#x316;", "&#x317;", "&#x318;", "&#x319;", "&#x31A;", "&#x31C;", "&#x31D;", "&#x31E;", "&#x31F;", "&#x320;", "&#x323;", "&#x324;", "&#x325;", "&#x326;", "&#x329;", "&#x32A;", "&#x32B;", "&#x32C;", "&#x32D;", "&#x32E;", "&#x32F;", "&#x330;", "&#x331;", "&#x332;", "&#x333;", "&#x339;", "&#x33A;", "&#x33C;"];
 
+//used in the fancier fade styles!
 var zalgo_top_size = 0;
-var zalgo_middle_size = 12;
+var zalgo_middle_size = 0;
 var zalgo_bottom_size = 0;
 
 var input_string = "Test phrase";
@@ -20,8 +22,14 @@ var output_string = "";
 
 var input_string_length = input_string.length;
 
+Random rand = new Random();
 
+int  n = rand.nextInt(50);
 
+//BORROWED BLOCK OF CODE
+//just a quick bit of hexadecimal math that i did not feel necessary to write from scratch!
+//credit to:
+//https://www.stuffbydavid.com/textcolorizer/source
 function cutHex(h) {return (h.charAt(0)=="#") ? h.substring(1,7):h}
 function hexToR(h) {return parseInt((cutHex(h)).substring(0,2),16)}
 function hexToG(h) {return parseInt((cutHex(h)).substring(2,4),16)}
@@ -34,9 +42,13 @@ function toHex(n) {
     return "0123456789ABCDEF".charAt((n-n%16)/16)
     + "0123456789ABCDEF".charAt(n%16);
 }
+//END BORROWED BLOCK OF CODE
 
+var input_effect="";
+var input_color1="";
+var input_color2="";
+var input_color3="";
 
 for (i = 0; i < input_string_length; i++) {
 	output_string += input_string.charAt(i);
-	
 }
