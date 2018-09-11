@@ -1,5 +1,5 @@
  
- ## FROM https://stackoverflow.com/questions/26927419/zalgo-text-in-java
+ // FROM https://stackoverflow.com/questions/26927419/zalgo-text-in-java
   import java.io.BufferedWriter;
   import java.io.File;
   import java.io.FileOutputStream;
