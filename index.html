@@ -1,32 +1,36 @@
 <html>
     <head>
-        
+      <script src="zalgo_fader.js">
+
+      </script
     </head>
     <body>
-        <noscript>Please enable client-side scripting to generate your text!</noscript>
-        <table>
-        <td>
-        <div id="left_field">
-        <font>Input fields:</font><br>  
-        <form>
-        <font>Text:</font><br>
-        <textarea type="text" name="user_text" rows="10" cols="100">As one great Furnace flam'd, yet from those flames
-No light, but rather darkness visible
-Serv'd only to discover sights of woe,
-        </textarea><br>
-        <br>        
-        Color 1:
-        <input type="text" name="color1"><br>
-        Color 2:
-        <input type="text" name="color2"><br>
-        <button type="button" onclick="">HE COMES!</button>
-        <br>
-        </form>
-            </div>
-            </td>
-            
-            <td>
-        <div id="right_field">
+      <noscript>Please enable client-side scripting to generate your text!</noscript>
+      <table>
+      <tr>
+          <form>
+            <font>Text:</font><br>
+            <textarea type="text" name="iText" rows="10" cols="100">As one great Furnace flamd, yet from those flames. No light, but rather darkness visible.</textarea><br>
+            <br>
+            Color 1: <input type="color" name="color1" value="#ff0000"><br>
+            Color 2: <input type="color" name="color2" value="#0000ff"><br>
+            Enable custom middle color: <input type="checkbox" name="colormid" value="custom_middle_color"> <input type="color" name="custom_middle_color_value" value="#000000">
+            <br>
+            Level of distortion:<br>
+            <input type="radio" name="level" value="zalgo_opt_mini" checked> Mini<br>
+            <input type="radio" name="level" value="zalgo_opt_normal"> Normal<br>
+            <input type="radio" name="level" value="zalgo_opt_maxi"> Maximum<br>
+            Turn on/off directions of zalgo:<br>
+            <input type="checkbox" name="zalgo_direction" value="zalgo_up"> Go up<br>
+            <input type="checkbox" name="zalgo_direction" value="zalgo_mid"> Do middle<br>
+            <input type="checkbox" name="zalgo_direction" value="zalgo_down"> Go down<br>
+            <br>
+            <button type="button" onclick="he_comes()">HE COMES!</button>
+            <br>
+          </form>
+      </tr>
+
+      <tr>
         <br>
         <font>Uncolorized zalgo output:</font><br>
         <div id="output_zalgo"></div><br>
@@ -34,9 +38,8 @@ Serv'd only to discover sights of woe,
         <div id="output_colorized"></div><br>
         <font>HTML code!</font><br>
         <code id="output_html"></code><br>
-        </div>
-        </td>
+      </tr>
         </table>
     </body>
-    
+
 </html>

@@ -1,0 +1,21 @@
+//generation methods:
+
+//if it is left to right then the color begin and end should be able to happen outside all of the rand_zalgo for loops
+
+//if it is top to bottom then start top color, mid, bottom all incrementally fading. 
+//THIS MIGHT CREATE PROBLEMS! I BELIEVE TOP TEXT GENERATES FROM "BOTTOM" TO TOP (STARTING IN MIDLE POSITION)
+
+//if it is bleeding out from the middle then start each top, mid, bottom at the start color
+
+/// previews/ output method:
+
+//do not add a plain zalgo preview! this is already well covered by other zalgo websites.
+
+//add a background color modifier for the div. maybe 3-5 color choices for simplicty sake. white. black. grey. r, g, b
+//color preview div
+//as each colorized letter is added code-wise, generate that as a string and publish it to:
+element.insertAdjacentHTML('beforeend', text);
+
+//html for the user to copy/paste
+//and then publish it to: 
+element.insertAdjacentText('beforeend', element);
