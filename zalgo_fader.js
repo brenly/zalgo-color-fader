@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 ﻿import Math;
 
 //zalgo html color fader by Brenly github.com/brenly
@@ -7,12 +6,6 @@
 // https://stackoverflow.com/questions/26927419/zalgo-text-in-java
 // posted by user https://stackoverflow.com/users/3826188/mihaic
 //hexadecimal color fader code:
-=======
-﻿import java.util.Random;
-
-//zalgo html color fader by Brenly
-//design concepts and code partials borrowed from:
->>>>>>> 70e2b228d9b886c7a1f1c6f61a71ab6ba4ac9b14
 //https://www.stuffbydavid.com/textcolorizer/source
 //https://www.stuffbydavid.com/textcolorizer
 //http://www.eeemo.net/
@@ -103,18 +96,11 @@ void color_calc () {
 void he_comes(iText, boolean zalgo_opt_mini, boolean zalgo_opt_normal, boolean zalgo_up,
                                      boolean zalgo_down, boolean zalgo_mid, color1, color2, colormid) {
 
-<<<<<<< HEAD
             var output_colorized = document.getElementById('output_colorized');
             var output_html = document.getElementById('output_html');
             int num_up;
             int num_mid;
             int num_down;
-=======
-//used in the fancier fade styles!
-var zalgo_top_size = 0;
-var zalgo_middle_size = 0;
-var zalgo_bottom_size = 0;
->>>>>>> 70e2b228d9b886c7a1f1c6f61a71ab6ba4ac9b14
 
             //this is no longer needed. there is no string to pass back. only a strict print to html div
             //String zalgoTxt = "";
@@ -125,7 +111,6 @@ var zalgo_bottom_size = 0;
 
 Random rand = new Random();
 
-<<<<<<< HEAD
                 //add the normal character
                 zalgoTxt += iText.charAt(i);
 
@@ -195,7 +180,11 @@ Random rand = new Random();
                     "Invoking the feeling of chaos.\n" +
                     "With out order.\n" +
                     "The Nezperdian hive-mind of chaos. Zalgo.    \n" +
-                    "He who Waits Behind The Wall.\n" +
+          has merge conflicts.has merge conflicts.
+
+To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line <<<<<<< HEAD. Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME. In this example, one person wrote "open an issue" in the base or HEAD branch and another person wrote "ask your question in IRC" in the compare branch or branch-a.
+
+To see the beginning of the merge conflict in your file, search the file for the conflict marker <<<<<<<. When you open the file in your text editor, you'll see the changes from the HEAD or base branch after the line <<<<<<< HEAD. Next, you'll see =======, which divides your changes from the changes in the other branch, followed by >>>>>>> BRANCH-NAME. In this example, one person wrote "open an issue" in the base or HEAD branch and another person wrote "ask your question in IRC" in the compare branch or branch-a.He          "He who Waits Behind The Wall.\n" +
                     "ZALGO!", true, false, true, true, true);
                   }
       */
@@ -211,10 +200,6 @@ function he_comes()
 */
 
 /*
-=======
-int  n = rand.nextInt(50);
-
->>>>>>> 70e2b228d9b886c7a1f1c6f61a71ab6ba4ac9b14
 //BORROWED BLOCK OF CODE
 //just a quick bit of hexadecimal math that i did not feel necessary to write from scratch!
 //credit to:
@@ -232,20 +217,11 @@ function toHex(n) {
     + "0123456789ABCDEF".charAt(n%16);
 }
 //END BORROWED BLOCK OF CODE
-<<<<<<< HEAD
 */
-=======
->>>>>>> 70e2b228d9b886c7a1f1c6f61a71ab6ba4ac9b14
 
 var input_effect="";
 var input_color1="";
 var input_color2="";
 var input_color3="";
 
-<<<<<<< HEAD
 */
-=======
-for (i = 0; i < input_string_length; i++) {
-	output_string += input_string.charAt(i);
-}
->>>>>>> 70e2b228d9b886c7a1f1c6f61a71ab6ba4ac9b14
