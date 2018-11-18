@@ -1,8 +1,12 @@
 <html>
     <head>
-      <script src="zalgo_fader.js">
-
-        </script>
+      <meta charset="utf-8"/>
+      <script src="zalgo_fader.js" charset="UTF-8"></script>
+      <style>
+        #output_zalgo { display:block; width:98%; min-height:2em; margin:0 auto;   font-size:2em;
+        font-weight:600;    
+        padding:0.25em;}
+        </style>
     </head>
     <body>
       <noscript>Please enable client-side scripting to generate your text!</noscript>
@@ -21,9 +25,9 @@
             <input type="radio" name="level" id="zalgo_opt_normal" value="zalgo_opt_normal"> Normal<br>
             <input type="radio" name="level" id="zalgo_opt_maxi" value="zalgo_opt_maxi"> Maximum<br>
             Turn on/off directions of zalgo:<br>
-            <input type="checkbox" name="zalgo_direction" id="zalgo_up" value="zalgo_up" checked> Go up<br>
-            <input type="checkbox" name="zalgo_direction" id="zalgo_mid" value="zalgo_mid" checked> Do middle<br>
-            <input type="checkbox" name="zalgo_direction" id="zalgo_down" value="zalgo_down" checked> Go down<br>
+            <input type="checkbox" name="zalgo_direction" id="up_opt" value="up_opt" checked> Go up<br>
+            <input type="checkbox" name="zalgo_direction" id="mid_opt" value="mid_opt" checked> Do middle<br>
+            <input type="checkbox" name="zalgo_direction" id="down_opt" value="down_opt" checked> Go down<br>
             <br>
             <button type="button" onclick="he_comes()">HE COMES!</button>
             <br>
