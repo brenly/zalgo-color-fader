@@ -206,18 +206,18 @@ function he_comes() {
     static_num_up = 4;
     static_num_mid = 2;
     static_num_down = 4;
-    static_vertical_axis = 9;
+    static_vertical_axis = 5;
   } else if (zalgo_opt_normal == true) {
     static_num_up = 7;
     static_num_mid = 3;
     static_num_down = 7;
-    static_vertical_axis = 15;
+    static_vertical_axis = 8;
   } else //maxi
   {
     static_num_up = 19;
     static_num_mid = 5;
     static_num_down = 19;
-    static_vertical_axis = 39;
+    static_vertical_axis = 20;
   }
 
   if (vertical_fade == true) {
@@ -272,13 +272,10 @@ function he_comes() {
     //console.log(colormid);
     if (vertical_fade == true) {
       colorized_output += '<span style="color:rgb(';
-      color1_array[0] -= colorsteps_array[0];
       colorized_output += Math.round(color1_array[0]);
       colorized_output += ", ";
-      color1_array[1] -= colorsteps_array[1];
       colorized_output += Math.round(color1_array[1]);
       colorized_output += ", ";
-      color1_array[2] -= colorsteps_array[2];
       colorized_output += Math.round(color1_array[2]);
       colorized_output += ');">';
     }
@@ -303,6 +300,12 @@ function he_comes() {
 
 
     if (up_opt == true) {
+      if (vertical_fade == true){ //reset color 1 before beginning zalgo print loop...
+        var color1 = document.getElementById("color1").value;
+            color1_array[0] = parseInt(color1.substring(1, 3), 16);
+      color1_array[1] = parseInt(color1.substring(3, 5), 16);
+      color1_array[2] = parseInt(color1.substring(5, 7), 16);
+      }
       for (var j = 0; j < rand_num_up; j++) {
         if (vertical_fade == true) {
           colorized_output += '<span style="color:rgb(';
@@ -326,6 +329,12 @@ function he_comes() {
       }
     }
     if (mid_opt == true) {
+            if (vertical_fade == true){ //reset color1 before beginning zalgo print loop...
+        var color1 = document.getElementById("color1").value;
+            color1_array[0] = parseInt(color1.substring(1, 3), 16);
+      color1_array[1] = parseInt(color1.substring(3, 5), 16);
+      color1_array[2] = parseInt(color1.substring(5, 7), 16);
+      }
       for (var j = 0; j < rand_num_mid; j++) {
         if (vertical_fade == true) {
           colorized_output += '<span style="color:rgb(';
@@ -348,6 +357,12 @@ function he_comes() {
       }
     }
     if (down_opt == true) {
+            if (vertical_fade == true){ //reset color1 before beginning zalgo print loop...
+        var color1 = document.getElementById("color1").value;
+            color1_array[0] = parseInt(color1.substring(1, 3), 16);
+      color1_array[1] = parseInt(color1.substring(3, 5), 16);
+      color1_array[2] = parseInt(color1.substring(5, 7), 16);
+      }
       for (var j = 0; j < rand_num_down; j++) {
         if (vertical_fade == true) {
           colorized_output += '<span style="color:rgb(';
